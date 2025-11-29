@@ -18,8 +18,12 @@ RUN apk add --no-cache \
     libxml2-dev \
     libzip-dev \
     libpng-dev \
+    libjpeg-turbo-dev \
+    freetype-dev \
     icu-dev \
     oniguruma-dev
+
+RUN docker-php-ext-configure gd --with-jpeg --with-freetype
 
 RUN docker-php-ext-install \
     bcmath \
