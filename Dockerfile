@@ -21,7 +21,8 @@ RUN apk add --no-cache \
     libjpeg-turbo-dev \
     freetype-dev \
     icu-dev \
-    oniguruma-dev
+    oniguruma-dev \
+    mysql-client
 
 RUN docker-php-ext-configure gd --with-jpeg --with-freetype
 
