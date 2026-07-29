@@ -29,6 +29,7 @@ RUN docker-php-ext-configure gd --with-jpeg --with-freetype
 RUN docker-php-ext-install \
     bcmath \
     exif \
+    ftp \
     gd \
     intl \
     pdo_mysql \
